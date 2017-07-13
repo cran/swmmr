@@ -1,0 +1,14 @@
+d41d8cd98f00b204e9800998ecf8427e *CHANGELOG
+126a0b95d279ce9937ad50c066f0dd48 *DESCRIPTION
+c33647cdf9c11bba0f1b1eb94c6e0d1a *NAMESPACE
+1e68d174663f86375d9ee3beaf69b7ec *R/RcppExports.R
+93b5c341fa2f1917d2202f188b6a4317 *R/read_inp.R
+052373f5184856f10abd827468ad0e06 *R/read_out.R
+7221b4aeecf1acd84171d784b7726311 *R/read_out_helper.R
+89b7392512146f6cf3d5abc097cabfa7 *R/run_swmm.R
+b41ccbf52d99ceae6a4572012cf624bf *README.md
+68f642b97ce7bcc75a4d5a3c5a0edff1 *man/read_inp.Rd
+c90bc024e3c2f5c7f239e5def59f511e *man/read_out.Rd
+03c45689ee5edd7e05f338aaef8512a4 *man/run_swmm.Rd
+921e062f18a29246be10d55defa972b1 *src/RcppExports.cpp
+981e89ef4a27d8b08ce98a058553d9bd *src/swmm5_iface.cpp
