@@ -1,6 +1,6 @@
-5fc2743a87f0707c0e6bce01902680c1 *DESCRIPTION
+f5248a34d25518b5e64e9a12e9d1c7d7 *DESCRIPTION
 4ea4d69d555a245eaa55303a448fb3d3 *NAMESPACE
-65242e76c7764b1b7b77b4a9c2992197 *NEWS.md
+298d680f29452c09219476a365ee3614 *NEWS.md
 e84fa6ebb0bd9faee8ed40a1f8f596ac *R/RcppExports.R
 3ad6ea9c884f3ec1327616c18d39c71b *R/assign_parameters.R
 c699fc43beb50f7da0c7dbb04293b633 *R/convert_to_sf.R
@@ -11,7 +11,7 @@ bc0b164a60241b3ede03cea5c34b0231 *R/plot_inp.R
 5e14598392cbea8fe8740188490ec438 *R/read_inp.R
 169edd3a4bfe269ab38572742d67e385 *R/read_lid_rpt.R
 052373f5184856f10abd827468ad0e06 *R/read_out.R
-7221b4aeecf1acd84171d784b7726311 *R/read_out_helper.R
+011b7e509303d23ed0db04ade9b55c86 *R/read_out_helper.R
 da630e06c8def9113ed6e69786450dcf *R/read_rpt.R
 89b7392512146f6cf3d5abc097cabfa7 *R/run_swmm.R
 78f904bb2f7e582f1cb320383c4f7c2b *R/shp_to_inp.R
@@ -21,13 +21,13 @@ cd6d8f73fcf84487bb52bd012389988b *README.md
 804aadb805c65a3f9dcab954ec2dd03b *build/vignette.rds
 aef0ca68d6538413cda9277e38d55a1f *inst/doc/How_swmmr_reads_and_writes_files.R
 b0c2110da8046145d2d3bb8cc070c0ec *inst/doc/How_swmmr_reads_and_writes_files.Rmd
-70a6b80f74f2ec4bfcd71b64ecae43e0 *inst/doc/How_swmmr_reads_and_writes_files.html
-61f8c0435396cd6558bfeceb52eddf49 *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.R
-5ceea9a32e46293f6e7ea947a3ab8dfc *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.Rmd
-8cda9a6546163dc165413668e5b8846d *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.html
+eeba57046bc1d6bd2bceedc27283c627 *inst/doc/How_swmmr_reads_and_writes_files.html
+c352147d9b11031b23e56d39b4f1b8c9 *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.R
+4f0934058cdaaf80980376d481466cc9 *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.Rmd
+01092165083b4883d10c7e37e67d8ca4 *inst/doc/How_to_autocalibrate_a_SWMM_model_with_swmmr.html
 d108c823a8e35f3bbdacf27ca23c682a *inst/doc/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.R
 9a12a21c405e427527bd9dcb2265e84d *inst/doc/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.Rmd
-00f73d3c68e096629e4987d3c5dc8dd5 *inst/doc/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.html
+9fd990b7babc8be66ecff235924af099 *inst/doc/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.html
 5254c1528ac0a77c35298e06197c2ee1 *inst/extdata/Example1.inp
 2072e28b535218b47b6c190b5708fb26 *inst/extdata/Example2.inp
 e61019505cf3d71e4a60b42a83823aa4 *inst/extdata/Example3.inp
@@ -159,5 +159,5 @@ bb7afec7ebd38ce27a42aa851258aa47 *man/timeseries_to_dat.Rd
 fa6c3c7af61e4b436cb771a9e7ed0a31 *tests/testthat.R
 506f51abbc680b953d806c0af28ba9e6 *tests/testthat/test_swmm.R
 b0c2110da8046145d2d3bb8cc070c0ec *vignettes/How_swmmr_reads_and_writes_files.Rmd
-5ceea9a32e46293f6e7ea947a3ab8dfc *vignettes/How_to_autocalibrate_a_SWMM_model_with_swmmr.Rmd
+4f0934058cdaaf80980376d481466cc9 *vignettes/How_to_autocalibrate_a_SWMM_model_with_swmmr.Rmd
 9a12a21c405e427527bd9dcb2265e84d *vignettes/How_to_convert_between_GIS_data_and_SWMM_with_swmmr.Rmd
