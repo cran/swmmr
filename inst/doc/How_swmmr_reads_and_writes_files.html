@@ -12,7 +12,7 @@
 
 <meta name="author" content="Dominik Leutnant" />
 
-<meta name="date" content="2018-04-10" />
+<meta name="date" content="2019-03-18" />
 
 <title>How swmmr reads and writes SWMM files</title>
 
@@ -205,6 +205,9 @@ code > span.al { color: #ff0000; font-weight: bold; }
 code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
 </style>
 
+
+
+
 </head>
 
 <body>
@@ -213,8 +216,8 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 
 <h1 class="title toc-ignore">How swmmr reads and writes SWMM files</h1>
-<h4 class="author"><em>Dominik Leutnant</em></h4>
-<h4 class="date"><em>2018-04-10</em></h4>
+<h4 class="author">Dominik Leutnant</h4>
+<h4 class="date">2019-03-18</h4>
 
 
 
@@ -245,7 +248,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 </div>
 <div id="what-happens-on-write_inp" class="section level2">
 <h2>What happens on <code>write_inp</code>?</h2>
-<p>The benefit of parsing the <code>inp</code> file into a list of <code>tibbles</code> becomes clearly if a new <code>inp</code> file has to be written to disk: <code>swmmr</code>’s inp writer just walks through the <code>inp</code> object and writes each tibble (whitespace separated) into one file. However, column names of sections are not written to clearly indicate the origin of file (i.e. <code>swmmr</code>). If column names are really required, the new generated inp file can still be opened with SWMM and saved back with the GUI.</p>
+<p>The benefit of parsing the <code>inp</code> file into a list of <code>tibbles</code> becomes clearly if a new <code>inp</code> file has to be written to disk: <code>swmmr</code>’s inp writer just walks through the <code>inp</code> object and writes each tibble (whitespace separated) into one file. However, column names of sections are not written to clearly indicate the origin of file (i.e. <code>swmmr</code>). If column names are really required, the new generated inp file can still be opened with SWMM and saved back with the GUI.</p>
 </div>
 <div id="what-is-a-rpt-file" class="section level2">
 <h2>What is a rpt file?</h2>
@@ -253,19 +256,24 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 </div>
 <div id="which-rpt-sections-are-parsed" class="section level2">
 <h2>Which rpt sections are parsed?</h2>
-<p>Currently, 24 report sections are recognized. These are:</p>
+<p>Currently, 34 report sections are recognized. These are:</p>
 <pre><code>#&gt;  [1] &quot;Element Count&quot;                    &quot;Pollutant Summary&quot;               
 #&gt;  [3] &quot;Landuse Summary&quot;                  &quot;Raingage Summary&quot;                
 #&gt;  [5] &quot;Subcatchment Summary&quot;             &quot;Node Summary&quot;                    
 #&gt;  [7] &quot;Link Summary&quot;                     &quot;Cross Section Summary&quot;           
 #&gt;  [9] &quot;Analysis Options&quot;                 &quot;Runoff Quantity Continuity&quot;      
-#&gt; [11] &quot;Runoff Quality Continuity&quot;        &quot;Flow Routing Continuity&quot;         
-#&gt; [13] &quot;Quality Routing Continuity&quot;       &quot;Highest Flow Instability Indexes&quot;
-#&gt; [15] &quot;Routing Time Step Summary&quot;        &quot;Subcatchment Runoff Summary&quot;     
-#&gt; [17] &quot;Subcatchment Washoff Summary&quot;     &quot;Node Depth Summary&quot;              
-#&gt; [19] &quot;Node Inflow Summary&quot;              &quot;Node Flooding Summary&quot;           
-#&gt; [21] &quot;Outfall Loading Summary&quot;          &quot;Link Flow Summary&quot;               
-#&gt; [23] &quot;Conduit Surcharge Summary&quot;        &quot;Link Pollutant Load Summary&quot;</code></pre>
+#&gt; [11] &quot;Runoff Quality Continuity&quot;        &quot;Groundwater Continuity&quot;          
+#&gt; [13] &quot;Flow Routing Continuity&quot;          &quot;Quality Routing Continuity&quot;      
+#&gt; [15] &quot;Highest Continuity Errors&quot;        &quot;Time-Step Critical Elements&quot;     
+#&gt; [17] &quot;Highest Flow Instability Indexes&quot; &quot;Routing Time Step Summary&quot;       
+#&gt; [19] &quot;Subcatchment Runoff Summary&quot;      &quot;LID Performance Summary&quot;         
+#&gt; [21] &quot;Subcatchment Washoff Summary&quot;     &quot;Node Depth Summary&quot;              
+#&gt; [23] &quot;Node Inflow Summary&quot;              &quot;Node Flooding Summary&quot;           
+#&gt; [25] &quot;Outfall Loading Summary&quot;          &quot;Link Flow Summary&quot;               
+#&gt; [27] &quot;Conduit Surcharge Summary&quot;        &quot;Link Pollutant Load Summary&quot;     
+#&gt; [29] &quot;Pumping Summary&quot;                  &quot;Groundwater Summary&quot;             
+#&gt; [31] &quot;LID Control Summary&quot;              &quot;Node Surcharge Summary&quot;          
+#&gt; [33] &quot;Storage Volume Summary&quot;           &quot;Flow Classification Summary&quot;</code></pre>
 </div>
 <div id="what-happens-on-read_rpt" class="section level2">
 <h2>What happens on <code>read_rpt</code>?</h2>
