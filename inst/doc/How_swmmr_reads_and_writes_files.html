@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="author" content="Dominik Leutnant" />
 
-<meta name="date" content="2019-03-18" />
+<meta name="date" content="2020-03-02" />
 
 <title>How swmmr reads and writes SWMM files</title>
 
@@ -31,9 +31,6 @@ padding-right: 2em;
 font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 line-height: 1.35;
-}
-#header {
-text-align: center;
 }
 #TOC {
 clear: both;
@@ -202,7 +199,8 @@ code > span.st { color: #d14; }
 code > span.co { color: #888888; font-style: italic; } 
 code > span.ot { color: #007020; } 
 code > span.al { color: #ff0000; font-weight: bold; } 
-code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61717; background-color: #e3d2d2; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
 </style>
 
 
@@ -217,7 +215,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">How swmmr reads and writes SWMM files</h1>
 <h4 class="author">Dominik Leutnant</h4>
-<h4 class="date">2019-03-18</h4>
+<h4 class="date">2020-03-02</h4>
 
 
 
@@ -248,7 +246,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 </div>
 <div id="what-happens-on-write_inp" class="section level2">
 <h2>What happens on <code>write_inp</code>?</h2>
-<p>The benefit of parsing the <code>inp</code> file into a list of <code>tibbles</code> becomes clearly if a new <code>inp</code> file has to be written to disk: <code>swmmr</code>’s inp writer just walks through the <code>inp</code> object and writes each tibble (whitespace separated) into one file. However, column names of sections are not written to clearly indicate the origin of file (i.e. <code>swmmr</code>). If column names are really required, the new generated inp file can still be opened with SWMM and saved back with the GUI.</p>
+<p>The benefit of parsing the <code>inp</code> file into a list of <code>tibbles</code> becomes clearly if a new <code>inp</code> file has to be written to disk: <code>swmmr</code>’s inp writer just walks through the <code>inp</code> object and writes each tibble (whitespace separated) into one file. However, column names of sections are not written to clearly indicate the origin of file (i.e. <code>swmmr</code>). If column names are really required, the new generated inp file can still be opened with SWMM and saved back with the GUI.</p>
 </div>
 <div id="what-is-a-rpt-file" class="section level2">
 <h2>What is a rpt file?</h2>
@@ -280,6 +278,9 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <p>Report files are read in the same manner like <code>inp</code> files. The output will be a <code>tibble</code> for each summary, which results as a list of <code>tibbles</code> for a single <code>rpt</code> file.</p>
 </div>
 
+
+
+<!-- code folding -->
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
